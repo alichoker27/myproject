@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Private Tutoring - Ali Youssef Shokr</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Tajawal", Arial, sans-serif;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 20px;
+      }
+
+      .poster {
+        background: white;
+        width: 800px;
+        max-width: 100%;
+        border-radius: 30px;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        overflow: hidden;
+        position: relative;
+      }
+
+      .header {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        padding: 50px 40px 40px;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .header::before {
+        content: "";
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: radial-gradient(
+          circle,
+          rgba(255, 255, 255, 0.1) 0%,
+          transparent 70%
+        );
+        animation: pulse 15s ease-in-out infinite;
+      }
+
+      @keyframes pulse {
+        0%,
+        100% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.1);
+        }
+      }
+
+      .profile-circle {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        border: 6px solid white;
+        overflow: hidden;
+        margin: 0 auto 25px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        position: relative;
+        z-index: 1;
+      }
+
+      .profile-circle img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .main-title {
+        font-size: 42px;
+        font-weight: 800;
+        color: white;
+        margin-bottom: 15px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        position: relative;
+        z-index: 1;
+      }
+
+      .subtitle {
+        font-size: 20px;
+        color: rgba(255, 255, 255, 0.95);
+        font-weight: 500;
+        position: relative;
+        z-index: 1;
+      }
+
+      .content {
+        padding: 45px;
+      }
+
+      .info-box {
+        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        border-radius: 20px;
+        padding: 35px;
+        margin-bottom: 30px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .info-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 25px;
+        font-size: 20px;
+      }
+
+      .info-item:last-child {
+        margin-bottom: 0;
+      }
+
+      .icon {
+        width: 50px;
+        height: 50px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 20px;
+        flex-shrink: 0;
+        box-shadow: 0 4px 10px rgba(102, 126, 234, 0.3);
+      }
+
+      .icon svg {
+        width: 26px;
+        height: 26px;
+        fill: white;
+      }
+
+      .info-label {
+        font-weight: 700;
+        color: #2d3748;
+        margin-left: 10px;
+      }
+
+      .info-value {
+        color: #4a5568;
+        font-weight: 500;
+      }
+
+      .contact-box {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        border-radius: 20px;
+        padding: 30px;
+        text-align: center;
+        margin-bottom: 30px;
+        box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+      }
+
+      .contact-label {
+        font-size: 22px;
+        color: white;
+        font-weight: 700;
+        margin-bottom: 15px;
+      }
+
+      .phone {
+        font-size: 36px;
+        font-weight: 800;
+        color: white;
+        letter-spacing: 2px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+      }
+
+      .footer {
+        background: #2d3748;
+        padding: 30px;
+        text-align: center;
+      }
+
+      .teacher-name {
+        font-size: 28px;
+        font-weight: 800;
+        color: white;
+        margin-bottom: 10px;
+      }
+
+      .university {
+        font-size: 18px;
+        color: #a0aec0;
+        font-weight: 500;
+      }
+
+      .decorative-icons {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 25px;
+        opacity: 0.85;
+      }
+
+      .decorative-icons svg {
+        width: 40px;
+        height: 40px;
+        fill: #667eea;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="poster">
+      <div class="header">
+        <div class="profile-circle">
+          <img src="Ali.jpg" alt="Ali Youssef Shokr" />
+        </div>
+        <h1 class="main-title">استثمر في مستقبلك الأكاديمي</h1>
+        <p class="subtitle">تعليم خاص - دروس فردية في المنزل</p>
+      </div>
+
+      <div class="content">
+        <div class="info-box">
+          <div class="info-item">
+            <div class="icon">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12 2L2 7v10c0 5.55 3.84 10.74 10 12 6.16-1.26 10-6.45 10-12V7l-10-5z"
+                />
+              </svg>
+            </div>
+            <div>
+              <span class="info-label">المحتوى:</span>
+              <span class="info-value">مفكرة كاملة - جميع المواد الدراسية</span>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="icon">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"
+                />
+              </svg>
+            </div>
+            <div>
+              <span class="info-label">المرحلة:</span>
+              <span class="info-value">الصف الخامس، السادس، والسابع</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-box">
+          <div class="contact-label">للتواصل والاستفسار</div>
+          <div class="phone">03817506</div>
+        </div>
+
+        <div class="decorative-icons">
+          <svg viewBox="0 0 24 24">
+            <path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3z" />
+          </svg>
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 4h5v8l-2.5-1.5L6 12V4z"
+            />
+          </svg>
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"
+            />
+          </svg>
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"
+            />
+          </svg>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="teacher-name">الأستاذ علي يوسف شكر</div>
+        <div class="university">
+          خريج الجامعة اللبنانية الدولية / كلية العلوم و الفنون
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
